@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tamanho-maximo {
+    width: 1024px;
+    margin: 0 auto;
+}
+.menu-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    object-fit: contain;
+    height: 60px;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: teal;
+    cursor: pointer;
+}
+.centro {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url(/assets/assets/recepcao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.centro h1,h2 {
+    margin-left: 20px;
+    font-size: 6vh;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#sobre {
+    height: 40vh;
+    margin-bottom: 40px;
+}
+
+.sobre > h1 {
+    color: #acaaaa;;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sobre p{
+    color: #acaaaa;
+    text-align: center;
+}
+
+.sobre-informacoes{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sobre-informacoes h1 {
+    margin: 40px 0 20px 0;
+    color: #acaaaa;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.sobre-informacoes ul li {
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #acaaaa;
+}
+
+.botao {
+    margin: 0 auto;
+}
+
+#especialidades {
+    padding-top: 40px;
+    height: auto;
+}
+
+.segundo-item {
+    height: auto;
+    width: 100%;
+}
+
+.segundo-item h1, p{
+    text-align: center;
+    color: #acaaaa;
+}
+
+.segundo-item h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.segundo-item p {
+    margin-bottom: 40px;    
+}
+
+.row-imgs {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row-imgs figure {
+    margin-top: 20px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+.row-imgs figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    color: #acaaaa;
+    font-weight: 500;
+    font-size: 20px;
+}
+.row-imgs img{
+    height: 300px;
+}
+
+.botao {
+    height: 40px;
+    width: 120px;
+   display: flex;
+   border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(127, 208, 255);
+   margin-top: 40px;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: rgb(79, 129, 158);
+}
+
+.informacoes-contato h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+    color: #acaaaa;
+}
+
+.informacoes-contato p:last-child {
+    margin-bottom: 40px;
+}
+
+iframe {
+    margin-bottom: 40px;
+
+}
+#rodape {
+    height: 90px;
+    overflow: hidden;
+    background-color: rgb(79, 129, 158);
+}
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.rodape img{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.rodape p {
+    margin-top: 5px;
+    color: white;
+    text-align: right;
+}
+
+.rodape-textos {
+    height: 60px;
+}
+#rodape p:last-child {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 12px;
+}
+@media only screen and (max-width: 374px){
+    * {display: none;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .tamanho-maximo {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+    .menu-topo {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .menu-topo a {
+        font-size: 12px;
+    }
+
+    .centro {
+        height: 200px;
+    }
+    .centro-informacoes h1{
+        margin-left: 10px;
+        font-size: 24px;
+    }
+
+    .centro-informacoes h2{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    #sobre {
+        height: auto;
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .sobre h1{
+        font-size: 24px;
+    }
+
+    .sobre p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .sobre img{
+       display: none;
+    }
+    
+    .sobre-informacoes h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #especialidades {
+        height: auto;
+    }
+
+    .segundo-item {
+        margin-bottom: 20px;
+    }
+    .row-imgs {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .row-imgs figure {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 0;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .row-imgs figure:last-child {
+        margin-bottom: 0px;
+    }
+
+    .row-imgs img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+     }
+
+    .botao {
+        margin: 0 auto;
+    }
+    
+    .informacoes-contato {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .informacoes-contato p {
+        width: calc(100% - 10px);
+    }
+    
+    #rodape {
+        height: 20vh;
+    }
+
+    .rodape {
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .rodape img {
+        object-fit: contain;
+    }
+    .rodape p {
+        text-align: center;
+    }
+
+    #rodape p:last-child {
+        cursor: pointer;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    h1 { font-size: 22px; }
+    .tamanho-maximo {
+        width: 100%;       
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+    nav a:last-child {
+        margin-right: 25px;
+    }
+
+    .centro {
+        height: 300px;
+    }
+
+    .centro-informacoes h1, h2 {
+        font-size: 30px;
+    }
+
+    #sobre {
+        height: 45vh;
+    }
+
+    .sobre-informacoes {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-informacoes img {
+        object-fit: contain;
+        display: none;
+    }
+    
+    #especialidades {
+        height: auto;
+    }
+
+    .row-imgs {
+        display: flex;
+        height: auto;
+        flex-flow: row wrap;
+    }
+
+    .row-imgs img {
+        height: 200px;
+    }
+
+    .row-imgs figure {
+        margin-top: 20px;
+    }
+
+    .informacoes-contato {
+        margin: 0 auto;
+    }
+    .informacoes-contato p {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #rodape {
+        height: 20vh;
+    }
+
+    .rodape {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .rodape img {
+        object-fit: contain;
+    }
+
+    .rodape p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tamanho-maximo { 
+        width: 100%;
+        }
+    nav{
+        margin-right: 25px;
+    }
+
+    .centro {
+        height: 400px;
+    }
+
+    #especialidades {
+        height: auto;
+    }
+
+    .segundo-item {
+        height: auto;
+    }
+
+    .row-imgs {
+        height: auto;
+    }
+
+    .row-imgs img {
+        height: 200px;
+    }
+
+    .rodape p {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tamanho-maximo {
+    margin: 0 auto;
+}
+.menu-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    object-fit: contain;
+    height: 60px;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:hover{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    color: teal;
+    cursor: pointer;
+}
+/* Links*/
+.links {
+    width: 100%;
+    height: 140px;
+    margin-top: 40px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+.link a {
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid #00cad1;
+    margin: 0 10px 10px;
+}
+
+.link a:hover {
+    color: #0d6e71;
+}
+
+.links h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Rodape */
+#rodape {
+    height: 19vh;
+    background-color: rgb(79, 129, 158);
+}
+.rodape {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.rodape img{
+    align-items: center;
+    height: 60px;
+    object-fit: contain;
+}
+
+.rodape p {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+#rodape p:last-child {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.titulo-tabelas {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.titulo-tabelas h1 {
+    color: #acacac;
+}
+
+/* Ortopedia Infos */
+
+.tabelas-infos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 300px;
+}
+
+.tabelas-infos > img {
+    max-width: 300px;
+    object-fit: cover;
+}
+.tabela-info {
+    width: 100%;
+    height: 100%;
+}
+.tabela-info > thead > tr >th {
+    font-size: 20px;
+    padding: 10px;
+    background-color: aqua;
+    text-align: left;
+    color: white;
+}
+
+.tabela-info > tbody > tr > td {
+    text-align: left;
+    padding: 13px;
+    font-size: 16px;
+    color: #acacac;
+}
+
+.tabela-info > tbody > tr > td:last-child {
+    font-weight: bold;
+}
+.tabela-info > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgb(145, 142, 142);
+    color: white;
+}
+
+.tabelas-infos:last-child {
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    .tabelas-infos > img {
+        display: none;
+    }
+    .tamanho-maximo {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .tabelas-infos {
+        height: auto;
+    }
+
+    .menu-topo {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .menu-topo a {
+        font-size: 16px;
+    }
+
+    .link {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .tabelas-infos > img {
+        display: none;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-topo nav {
+        display: flex;
+    }
+
+    .menu-topo nav a {
+        font-size: 16px;
+    }
+
+    .tamanho-maximo {
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+}
