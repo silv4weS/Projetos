@@ -1,3 +1,3 @@
 Hello there!
 
-A put a lot of mini-projects in this repositorie for show what i'm studyng.
+I put several mini-projects in this repository to show that I'm learning
